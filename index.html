@@ -1,0 +1,305 @@
+<!-- <!-- <ul id="fruits">
+  <li>Apple</li>
+  <li id="re">banana</li>
+  <li id="removeMe">Orabge</li>
+  <li>Cherry</li>
+</ul> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <button class="as">Start</button>
+   <button class="qw">Stop</button>
+
+-->
+<!-- </body>
+</html> -->
+<!-- <script src="todo.js"></script> 
+<form id="myForm">
+  <input type="text" name="username" placeholder="Username" id="aa" />
+  <input type="email" name="email" placeholder="Email" />
+  <button type="submit">Submit</button>
+</form> -->
+
+<!-- <script>
+  const form = document.querySelector("#myForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent page reload
+
+    // Extracting data using form elements
+    let username = form.elements["username"].value;
+    let email = form.elements["email"].value;
+
+    console.log("Username:", username);
+    console.log("Email:", email);
+  });
+</script> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Change Event Example</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    #message {
+      margin-top: 1rem;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="myInput">Enter your name:</label>
+  <input type="text" id="myInput" placeholder="Type your name here" />
+
+  <div id="message"></div>
+
+  <script>
+    const myInput = document.getElementById("myInput");
+    const message = document.getElementById("message");
+
+    myInput.addEventListener("change", function (e) {
+      console.log("Final value after blur:", this.value);
+     // message.textContent = "You entered: " + this.value;
+    });
+  </script>
+
+</body>
+</html> -->
+
+<!-- <input id="name" maxlength="20">
+<span id="count"></span>
+
+<script>
+  const nameField = document.getElementById("name");
+   //const countSpan = document.getElementById("count");
+
+  nameField.addEventListener("input", function () {
+    console.log(this.value);
+  });
+</script> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+input.tx {
+  padding: 5px;
+  width: 200px;
+}
+button.gg {
+  margin-left: 10px;
+  padding: 2px 6px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button.ins {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  display:list-item;
+  margin-left: 850px;
+  width: 150px;
+  text-align: center;
+} -->
+  <!-- </style>
+</head>
+<body>
+  <center><h1>Todo List</h1></center>
+  <br>
+  <center>
+    <input type="text" placeholder="Enter List" class="tx">
+  <button class="ins">Click</button></center>
+  <br>
+  
+    <ul align="center" id="show">
+    
+      </ul>
+
+ <script src="todo.js"></script>
+</body>
+</html> --> 
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Delegation Example</title>
+</head>
+<body>
+  <ul id="itemList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <button onclick="addNewItem()">Add New Item</button>
+
+  <script src="script.js"></script>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .line-one, .line-two {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .btn {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s;
+        }
+        
+
+
+
+        /*.btn:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }*/
+        
+        .red {
+            background-color: #ff5252;
+        }
+        
+        .yellow {
+            background-color: #ffd740;
+        }
+        
+        .green {
+            background-color: #69f0ae;
+        }
+        
+        .purple {
+            background-color: #b388ff;
+        }
+        
+       /* .btn.active {
+            filter: brightness(1.2);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }*/
+        
+        .level-display {
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .userflash{
+          background-color: rgb(250, 254, 255);
+          transform: scale(0.95);
+          box-shadow: #333;
+          color: #333;
+        }
+        
+
+        .flash{
+               background-color:rgb(21, 20, 20);
+                transform: scale(0.95);
+                box-shadow: #333;
+              }
+    </style>
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <h2 id="instruction">Press any key to start the game</h2>
+    <div class="level-display" id="level">Level 0</div>
+    
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn red" type="button" id="red">1</div>
+            <div class="btn yellow" type="button" id="yellow">2</div>
+        </div>
+        <div class="line-two">
+            <div class="btn green" type="button" id="green">3</div>
+            <div class="btn purple" type="button" id="purple">4</div>
+        </div>
+    </div>
+<script src="todo.js"></script>
+  </body>
+</html> 
